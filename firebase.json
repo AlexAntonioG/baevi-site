@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "http://baevi.com.mx",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
