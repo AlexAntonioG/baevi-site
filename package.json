@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8081",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -23,9 +24,6 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "scripts": {
-    "build:digitalocean": "npm install --production=false && npm run build && npm ci"
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
